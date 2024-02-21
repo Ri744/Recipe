@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(218, 216, 206);
+    overflow-x: hidden;
+}
+.container {
+    height: 100vh;
+    width: 100vw;
+    overflow:none;
+}
+
+.navcontainer {
+    width: 100vw;
+    background-color: #000000;
+    background-image: linear-gradient(160deg, #000000 0%, #8085d0 100%);
+    display: flex;
+    justify-content:space-around;
+    align-items: center; 
+    position: relative;
+}
+
+nav {
+    width: 100%;
+    overflow-x: none;
+    padding-right: 20px;
+}
+ 
+#logo {
+    font-family: cursive;
+    font-size: 40px;
+    color: rgb(175, 134, 80);
+}
+
+#listItem {
+    width: 100%;
+    /* margin-left: 10px;
+    margin-right: 10px; */
+    padding: 10px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px;
+    color: rgb(85, 59, 25);
+}
+
+.contentBox {
+    /* border: 1px solid black; */
+    box-shadow: 0px 0px 100px black;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 40px;
+    background-color: rgb(194, 199, 135);
+}
+
+.item {
+    display: flex;
+    justify-content: space-around;
+}
+
+.leftBox {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.leftBox h2 {
+    font-size: 2rem;
+}
+
+.ingrBox {
+    font-size: 1.3rem;
+}
+
+.recipeBox {
+    font-size: 1.3rem;
+}
+
+.rightBox {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+    width: 300px;
+    transition: all 0.3s ease-out 0s;
+}
+
+.rightBox img {
+    /* height: 200px;
+    width: 300px; */
+    height: 100%;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 20px;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+    transition-property: all;
+}
+
+.rightBox:hover {
+    transform: scale3d(1.1,1.1,1.4);
+    cursor: pointer;
+}
+
+.rightBox .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+   
+    border-radius: 20px;
+    background-color: #bda791c5;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    transition: all;
+    opacity: 0;
+    transition: all 0.2s linear 0.1s;
+}
+
+.rightBox .overlay a {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.rightBox:hover .overlay {
+    opacity: 1;
+    
+}
+
+.footerBox {
+    background-color: #000000;
+    background-image: linear-gradient(160deg, #000000 0%, #8085d0 100%);
+    width: 100vw;
+    text-align: center;
+    color: rgb(131, 130, 129);
+}
